@@ -16,12 +16,6 @@ class App extends React.Component {
     };
   }
 
-  // componentDidMount() {
-  //   setInterval(function() {
-  //     this.setState({'verb': this.props.verbs[Math.floor(Math.random() * 20)]});
-  //   }.bind(this), 500);
-  // }
-
   // In React, the render method is used
   // to create the DOM content for a
   // component. Notice that {} can be used
@@ -38,6 +32,22 @@ class App extends React.Component {
   // their state, this will allow 
   // the 'verb' property to update once every
   // 500 ms
+
+  // The reason setTimeout works correctly is because
+  // it is in the render method. When render is invoked,
+  // setTimeout is called. Render is invoked each time
+  // the state of app changes. If I were to switch this
+  // with the code in componentDidMount, which uses 
+  // setInterval instead, the functionality would stay
+  // the same. That works because componentDidMount
+  // is a 'lifecycle' method which is only ever called 
+  // once. This ensures only one interval is in existence.
+
+  // componentDidMount() {
+  //   setInterval(function() {
+  //     this.setState({'verb': this.props.verbs[Math.floor(Math.random() * 20)]});
+  //   }.bind(this), 500);
+  // }
 
   render () {
     setTimeout(function() {
