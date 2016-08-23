@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+  body {
+    background-color: #999;
+    color: #eee;
+    text-shadow: 2px 1px black;
+  }
+  .character-title {
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 4px 2px #be5555;
+    margin-right: 100px;
+  }
+  .charPic {
+    border-radius: 50px;
+    height: 240px;
+    width: 200px;
+  }
+  .names {
+    margin-left: 120px;
+  }
+  </style>
+  <script src='node_modules/react/dist/react.js'  ></script>
+  <script src='node_modules/react-dom/dist/react-dom.js' ></script>
+</head>
+<body>
+  <!-- A DOM element should be created that -->
+  <!-- will wrap the content -->
+
+  <div id='app'></div>
+
+  <!-- Notice that the files are imported -->
+  <!-- in a bottom-to-top fashion, which -->
+  <!-- ensures that all files will be loaded -->
+  <!-- with the proper dependencies for rendering -->
+  
+  <script src='compiled/components/app.js'></script>
+  <script src='compiled/components/character-table.js'></script>
+  <script src='compiled/components/characters.js'></script>
+  <script src='compiled/index.js'></script>
+</body>
+</html>
