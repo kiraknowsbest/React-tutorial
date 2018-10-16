@@ -7,12 +7,12 @@ var characters = [
     details: 'A genius, oblivious to his own capabilities.'
   },
   {
-    name: 'Dib',
+    name: 'Dib Membrane',
     image: 'http://vignette4.wikia.nocookie.net/villains/images/3/3f/304px-Dib_rage.png/revision/latest?cb=20130524204322',
     details: 'The only human who sees Zim as a threat.'
   },
   {
-    name: 'Gaz',
+    name: 'Gaz Membrane',
     image: 'http://vignette1.wikia.nocookie.net/zimwiki/images/8/88/Gaz.png/revision/latest?cb=20121202182910',
     details: "Dib's sister, and the strongest of them all."
   },
